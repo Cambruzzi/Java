@@ -1,107 +1,122 @@
 import java.util.ArrayList;
 
-public class Baralho {
-  ArrayList <Cartas> baralho;
+public class Deck{
+  ArrayList <Carta> deck;
 
-  public Baralho (){
+  public Deck (){
     
     Atributo A1 = new Atributo();
-    A1.atributos.numero_de_albuns= 11;
-    A1.atributos.numero_de_grammys= 9;
-    A1.atributos.trocas_de_membros= 7;
-    A1.atributos.tempo_de_carreira=37;
-    A1.atributos.numero_de_albuns_ruins= 4;
+    A1.numero_de_albuns= 11;
+    A1.numero_de_grammys= 9;
+    A1.trocas_de_membros= 7;
+    A1.tempo_de_carreira=37;
+    A1.numero_de_albuns_ruins= 4;
 
     Carta cartaA1 = new Carta();
     cartaA1.identidade = "A1";
     cartaA1.nome = "Metallica";
     cartaA1.atributos = A1;
 
+    this.deck.add(cartaA1);
 
     Atributo A2 = new Atributo();
-    A2.atributos.numero_de_albuns= 15;
-    A2.atributos.numero_de_grammys= 1;
-    A2.atributos.trocas_de_membros= 19;
-    A2.atributos.tempo_de_carreira= 35;
-    A2.atributos.numero_de_albuns_ruins=6;
+    A2.numero_de_albuns= 15;
+    A2.numero_de_grammys= 1;
+    A2.trocas_de_membros= 19;
+    A2.tempo_de_carreira= 35;
+    A2.numero_de_albuns_ruins=6;
     	
     Carta cartaA2= new Carta();
     cartaA2.identidade = "A2";
     cartaA2.nome = "Megadeth";
     cartaA2.atributos = A2;
 
+    this.deck.add(cartaA2);
+
     Atributo A3 = new Atributo();
-    A3.atributos.numero_de_albuns= 16;
-    A3.atributos.numero_de_grammys= 1;    
-    A3.atributos.trocas_de_membros= 7;
-    A3.atributos.tempo_de_carreira= 43;
-    A3.atributos.numero_de_albuns_ruins= 3;
+    A3.numero_de_albuns= 16;
+    A3.numero_de_grammys= 1;    
+    A3.trocas_de_membros= 7;
+    A3.tempo_de_carreira= 43;
+    A3.numero_de_albuns_ruins= 3;
 
     Carta cartaA3= new Carta();
     cartaA3.identidade = "A3";
     cartaA3.nome = "Iron Maiden";
     cartaA3.atributos = A3;
-    
+
+    this.deck.add(cartaA3);
+
     Atributo A4 = new Atributo();
-    A4.atributos.numero_de_albuns= 6;
-    A4.atributos.numero_de_grammys= 0;    
-    A4.atributos.trocas_de_membros= 20;
-    A4.atributos.tempo_de_carreira= 33;
-    A4.atributos.numero_de_albuns_ruins= 2;
+    A4.numero_de_albuns= 6;
+    A4.numero_de_grammys= 0;    
+    A4.trocas_de_membros= 20;
+    A4.tempo_de_carreira= 33;
+    A4.numero_de_albuns_ruins= 2;
 
     Carta cartaA4= new Carta();
     cartaA4.identidade = "A4";
     cartaA4.nome = "Guns n Roses";
     cartaA4.atributos = A4;
 
+    this.deck.add(cartaA4);
+
     Atributo A5 = new Atributo();
-    A5.atributos.numero_de_albuns= 5;
-    A5.atributos.numero_de_grammys= 1;    
-    A5.atributos.trocas_de_membros= 1;
-    A5.atributos.tempo_de_carreira= 24;
-    A5.atributos.numero_de_albuns_ruins= 0;
+    A5.numero_de_albuns= 5;
+    A5.numero_de_grammys= 1;    
+    A5.trocas_de_membros= 1;
+    A5.tempo_de_carreira= 24;
+    A5.numero_de_albuns_ruins= 0;
 
     Carta cartaA5= new Carta();
     cartaA5.identidade = "A5";
-    cartaA5.nome = "System of a Down"
+    cartaA5.nome = "System of a Down";
     cartaA5.atributos = A5;
 
+    this.deck.add(cartaA5);
+
     Atributo A6 = new Atributo();
-    A6.atributos.numero_de_albuns= 5;
-    A6.atributos.numero_de_grammys= 1;    
-    A6.atributos.trocas_de_membros= 7;
-    A6.atributos.tempo_de_carreira= 23;
-    A6.atributos.numero_de_albuns_ruins= 1;
+    A6.numero_de_albuns= 5;
+    A6.numero_de_grammys= 1;    
+    A6.trocas_de_membros= 7;
+    A6.tempo_de_carreira= 23;
+    A6.numero_de_albuns_ruins= 1;
 
     Carta cartaA6 = new Carta();
     cartaA6.identidade = "A6";
     cartaA6.nome = "Slipknot";
     cartaA6.atributos = A6;
 
+    this.deck.add(cartaA6);
+
     Atributo A7 = new Atributo();
-    A7.atributos.numero_de_albuns= 19 ;
-    A7.atributos.numero_de_grammys= 2  ;    
-    A7.atributos.trocas_de_membros= 30;
-    A7.atributos.tempo_de_carreira= 50;
-    A7.atributos.numero_de_albuns_ruins= 4 ;
+    A7.numero_de_albuns= 19 ;
+    A7.numero_de_grammys= 2  ;    
+    A7.trocas_de_membros= 30;
+    A7.tempo_de_carreira= 50;
+    A7.numero_de_albuns_ruins= 4 ;
 
     Carta cartaA7= new Carta();
     cartaA7.identidade = "A7";
     cartaA7.nome = "Black Sabbath";
     cartaA7.atributos = A7;
 
-    Atributo A8 = new Atributo();
-    A8.atributos.numero_de_albuns=  3;
-    A8.atributos.numero_de_grammys=  1;    
-    A8.atributos.trocas_de_membros= 7;
-    A8.atributos.tempo_de_carreira= 7 ;
-    A8.atributos.numero_de_albuns_ruins= 0
+    this.deck.add(cartaA7);
 
-    Carta cartaA8= new Carta();
+    Atributo A8 = new Atributo();
+    A8.numero_de_albuns=  3;
+    A8.numero_de_grammys=  1;    
+    A8.trocas_de_membros= 7;
+    A8.tempo_de_carreira= 7 ;
+    A8.numero_de_albuns_ruins= 0;
+
+    Carta cartaA8 = new Carta();
     cartaA8.identidade = "A8";
     cartaA8.nome = "Nirvana";
     cartaA8.atributos = A8;
-    
+
+    this.deck.add(cartaA8);
+
     Atributo B1 = new Atributo();
     B1.numero_de_albuns= 9;
     B1.numero_de_grammys= 12  ;    
@@ -113,6 +128,8 @@ public class Baralho {
     cartaB1.identidade = "B1";
     cartaB1.nome = "Foo Fighters";
     cartaB1.atributos = B1;
+
+    this.deck.add(cartaB1);
 
     Atributo B2 = new Atributo();
 	  B2.numero_de_albuns= 20;
@@ -126,6 +143,8 @@ public class Baralho {
     cartaB2.nome = "Deep Purple";
     cartaB2.atributos = B2;
 
+    this.deck.add(cartaB2);
+
     Atributo B3 = new Atributo();
     B3.numero_de_albuns= 18;
     B3.numero_de_grammys= 1;    
@@ -137,6 +156,8 @@ public class Baralho {
     cartaB3.identidade = "B3";
     cartaB3.nome = "Judas Priest";
     cartaB3.atributos = B3;
+
+    this.deck.add(cartaB3);
 
     Atributo B4 = new Atributo();
     B4.numero_de_albuns= 12;
@@ -150,6 +171,8 @@ public class Baralho {
     cartaB4.nome = "Korn";
     cartaB4.atributos = B4;
 
+    this.deck.add(cartaB4);
+
     Atributo B5 = new Atributo();
     B5.numero_de_albuns= 14;
     B5.numero_de_grammys= 0;    
@@ -161,6 +184,8 @@ public class Baralho {
     cartaB5.identidade = "B5";
     cartaB5.nome = "Sepultura";
     cartaB5.atributos = B5;
+
+    this.deck.add(cartaB5);
 
     Atributo B6 = new Atributo();
     B6.numero_de_albuns= 9;
@@ -174,6 +199,8 @@ public class Baralho {
     cartaB6.nome = "Angra";
     cartaB6.atributos = B6;
 
+    this.deck.add(cartaB6);
+
     Atributo B7 = new Atributo();    
     B7.numero_de_albuns= 3;
     B7.numero_de_grammys= 1;    
@@ -185,6 +212,8 @@ public class Baralho {
     cartaB7.identidade = "B7";
     cartaB7.nome = "Tenacious D";
     cartaB7.atributos = B7;
+
+    this.deck.add(cartaB7);
 
     Atributo B8 = new Atributo(); 
 
@@ -198,7 +227,9 @@ public class Baralho {
     cartaB8.identidade = "B8";
     cartaB8.nome = "Ghost BC";
     cartaB8.atributos = B8;
-	  
+
+    this.deck.add(cartaB8);
+
     Atributo C1 = new Atributo();
     C1.numero_de_albuns= 9;
     C1.numero_de_grammys= 0;    
@@ -211,31 +242,37 @@ public class Baralho {
     cartaC1.nome = "Pantera";
     cartaC1.atributos = C1;
 
+    this.deck.add(cartaC1);
+
     Atributo C2 = new Atributo();
 
-    C2.numero_de_albuns= 12;
-    C2.numero_de_grammys= 2;    
-    C2.trocas_de_membros= 3;
-    C2.tempo_de_carreira= 37;
-    C2.numero_de_albuns_ruins= 2;
+   	C2.numero_de_albuns= 12;
+   	C2.numero_de_grammys= 2;    
+   	C2.trocas_de_membros= 3;
+   	C2.tempo_de_carreira= 37;
+   	C2.numero_de_albuns_ruins= 2;
     
     Carta cartaC2= new Carta();
-    cartaC2.identidade = "C2";
-    cartaC2.nome = "Slayer";
+   	cartaC2.identidade = "C2";
+   	cartaC2.nome = "Slayer";
     cartaC2.atributos = C2;
+
+    this.deck.add(cartaC2);
 
     Atributo C3 = new Atributo();
 
-    C3.numero_de_albuns= 22;
-    C3.numero_de_grammys= 1;    
-    C3.trocas_de_membros= 7;
-    C3.tempo_de_carreira= 40;
-    C3.numero_de_albuns_ruins= 9;
+   	C3.numero_de_albuns= 22;
+   	C3.numero_de_grammys= 1;    
+   	C3.trocas_de_membros= 7;
+   	C3.tempo_de_carreira= 40;
+   	C3.numero_de_albuns_ruins= 9;
 
-    Carta cartaC3= new Carta();
-    cartaC3.identidade = "C3";
-    cartaC3.nome = "Motorhead";
+   	Carta cartaC3= new Carta();
+   	cartaC3.identidade = "C3";
+   	cartaC3.nome = "Motorhead";
     cartaC3.atributos = C3;
+
+    this.deck.add(cartaC3);
 
     Atributo C4 = new Atributo();
 
@@ -250,6 +287,8 @@ public class Baralho {
     cartaC4.nome = "Lamb of God";
     cartaC4.atributos = C4;
 
+    this.deck.add(cartaC4);
+
     Atributo C5 = new Atributo();
 
     C5.numero_de_albuns= 5;
@@ -262,6 +301,8 @@ public class Baralho {
     cartaC5.identidade = "C5";
     cartaC5.nome = "The Agonist";
     cartaC5.atributos = C5;
+
+    this.deck.add(cartaC5);
 
     Atributo C6 = new Atributo();
 
@@ -276,6 +317,8 @@ public class Baralho {
     cartaC6.nome = "Ac/Dc";
     cartaC6.atributos = C6;
 
+    this.deck.add(cartaC6);
+
     Atributo C7 = new Atributo();
 
     C7.numero_de_albuns= 6;
@@ -288,6 +331,8 @@ public class Baralho {
     cartaC7.identidade = "C7";
     cartaC7.nome = "Bullet for my Valentine";
     cartaC7.atributos = C7;
+
+    this.deck.add(cartaC7);
 
     Atributo C8 = new Atributo();
 
@@ -302,6 +347,8 @@ public class Baralho {
     cartaC8.nome = "Stone Sour";
     cartaC8.atributos = C8;
 
+    this.deck.add(cartaC8);
+
     Atributo D1 = new Atributo();
 
     D1.numero_de_albuns= 15;
@@ -315,6 +362,8 @@ public class Baralho {
     cartaD1.nome = "Pink Floyd";
     cartaD1.atributos = D1;
 
+    this.deck.add(cartaD1);
+
     Atributo D2 = new Atributo();
 
     D2.numero_de_albuns= 9;
@@ -327,6 +376,8 @@ public class Baralho {
     cartaD2.identidade = "D2";
     cartaD2.nome = "The Doors";
     cartaD2.atributos = D2;
+    
+    this.deck.add(cartaD2);
 
     Atributo D3 = new Atributo();
 
@@ -341,6 +392,8 @@ public class Baralho {
     cartaD3.nome = "Black Label Society";
     cartaD3.atributos = D3;
 
+    this.deck.add(cartaD3);
+
     Atributo D4 = new Atributo();
 
     D4.numero_de_albuns= 13;
@@ -353,6 +406,8 @@ public class Baralho {
     cartaD4.identidade = "D4";
     cartaD4.nome = "Dream Theater";
     cartaD4.atributos = D4;
+
+    this.deck.add(cartaD4);
 
     Atributo D5 = new Atributo();
 
@@ -367,6 +422,8 @@ public class Baralho {
     cartaD5.nome = "Avenged Sevenfold";
     cartaD5.atributos = D5;
 
+    this.deck.add(cartaD5);
+
     Atributo D6 = new Atributo();
 
     D6.numero_de_albuns= 6;
@@ -380,10 +437,12 @@ public class Baralho {
     cartaD6.nome = "Rammstein";
     cartaD6.atributos = D6;
 
+    this.deck.add(cartaD6);
+
     Atributo D7 = new Atributo();
 
     D7.numero_de_albuns= 10;
-    D7.numero_de_grammys= 1;    
+    D7.numero_de_grammys= 0;    
     D7.trocas_de_membros= 5;
     D7.tempo_de_carreira= 26;
     D7.numero_de_albuns_ruins= 4;
@@ -392,6 +451,8 @@ public class Baralho {
     cartaD7.identidade = "D7";
     cartaD7.nome = "Amon Amarth";
     cartaD7.atributos = D7;
+
+    this.deck.add(cartaD7);
 
     Atributo D8 = new Atributo();
 
@@ -406,13 +467,33 @@ public class Baralho {
     cartaD8.nome = "Molejo";
     cartaD8.atributos = D8;
 
-    
-
-
-
-    
-
-
-
+    this.deck.add(cartaD8);
   }
+
+/*
+    public ArrayList<Carta> dividirDeck(){
+      int auxiliar;
+      ArrayList<Carta> auxiliarlist;
+      auxiliarlist = new ArrayList<Carta>();
+
+      if(this.deck.get(0) != null){
+        for(auxiliar=0;auxiliar<=15;auxiliar++){
+          auxiliarlist.add(this.deck.remove(0));      
+        }
+        return auxiliarlist;
+      }
+
+      else if (this.deck.get(16) != null){
+        for(auxiliar = 16;auxiliar <= 32;auxiliar++){
+
+        }
+      }
+    }
+*/
+  
 }
+    
+
+
+  
+
