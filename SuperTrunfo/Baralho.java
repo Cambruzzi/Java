@@ -2,7 +2,11 @@ import java.util.ArrayList;
 
 public class Baralho {
 
-  ArrayList <Carta> baralho;
+  ArrayList<Carta> baralho;
+
+  public Baralho(){
+    baralho = new ArrayList<Carta>();
+  }
 
   public Carta retornaCarta(){
     Carta auxiliar;
@@ -14,6 +18,11 @@ public class Baralho {
     this.baralho.add(carta1);
     this.baralho.add(carta2);
   }
+
+  public int getQuantidade(){
+    return this.baralho.size();
+  }
+  
 
 
 
