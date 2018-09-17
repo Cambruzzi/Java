@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Baralho {
@@ -5,7 +6,7 @@ public class Baralho {
   ArrayList<Carta> baralho;
 
   public Baralho(){
-    baralho = new ArrayList<Carta>();
+    baralho = new ArrayList<>();
   }
 
   public Carta retornaCarta(){
@@ -23,9 +24,4 @@ public class Baralho {
     return this.baralho.size();
   }
   
-
-
-
-
-
 }
