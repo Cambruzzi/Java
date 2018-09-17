@@ -1,9 +1,14 @@
+
+
 import java.util.ArrayList;
+import java.util.*;
 
 public class Deck{
   ArrayList <Carta> deck;
 
   public Deck (){
+
+    this.deck = new ArrayList<>();
     
     Atributo A1 = new Atributo();
     A1.numero_de_albuns= 11;
@@ -470,29 +475,32 @@ public class Deck{
     this.deck.add(cartaD8);
   }
 
-/*
-    public ArrayList<Carta> dividirDeck(){
-      int auxiliar;
-      ArrayList<Carta> auxiliarlist;
-      auxiliarlist = new ArrayList<Carta>();
+  public void embaralharDeck(){
+    Collections.shuffle(this.deck);
+  }
 
-      if(this.deck.get(0) != null){
-        for(auxiliar=0;auxiliar<=15;auxiliar++){
-          auxiliarlist.add(this.deck.remove(0));      
-        }
-        return auxiliarlist;
-      }
 
-      else if (this.deck.get(16) != null){
-        for(auxiliar = 16;auxiliar <= 32;auxiliar++){
-
-        }
+  public ArrayList<Carta> dividirDeck() {
+    int auxiliar;
+    ArrayList<Carta> auxiliarlist;
+    auxiliarlist = new ArrayList<>();
+    
+    if(this.deck.get(0) != null){
+    for(auxiliar=0;auxiliar<16;auxiliar++){
+      auxiliarlist.add(this.deck.remove(0));
       }
     }
-*/
+    
+    return auxiliarlist;
+  }
+
   
 }
     
+
+
+  
+
 
 
   
